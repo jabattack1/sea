@@ -8,8 +8,10 @@
 
 User.destroy_all
 
-Admin.destroy_all
 
+Admin.create({first_name: "Peter", last_name: "Hahn", email: "peter.hahn@live.com", password: "MoH@wk77#"})
+Admin.create({first_name: "Crystal", last_name: "Yoo", email: "suejung88@gmail.com", password: "animals"})
+Admin.create({first_name: "Lisa", last_name: "Yoo", email: "eunlisa61@yahoo.com", password: "crystaltimothy"})
 
 Menu.destroy_all
 Menu.create({course: "Appetizers", dish_name: "Cherrystone Clams On The Half Shell(6)", description: "", price: "$4.99"})
