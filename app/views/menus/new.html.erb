@@ -1,11 +1,11 @@
-<div class="iform" id="admin_account" style="overflow-y: auto">
-	
-
 <form method="POST" action=<%= "/admin_session/" + session[:user_id].to_s%>>
   		<input type="hidden" name="_method" value="DELETE" />
   		<input type="hidden" name="id" value=<%=session[:user_id].to_s%>/>
   		<input type="submit" value="LOG OUT" class="admin_logout"/>
 </form>
+<div class="iform" id="admin_account" style="overflow-y: auto">
+	
+
 
 
 <form method="POST" action="/menus">
