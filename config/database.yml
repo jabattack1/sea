@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: seafoodbay_production
   username: seafoodbay
   password: <%= ENV['SEAFOODBAY_DATABASE_PASSWORD'] %>
