@@ -1,0 +1,1235 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+/*@font-face {
+  font-family: 'Mistral';
+  src: url(../fonts/mistral.woff);
+}*/
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url() no-repeat;
+  background-image: url("cg_fishing.gif");
+ 
+  /*background-size: cover;*/
+  background-size: 100%;
+  background-color: #FFFFFF;
+  background-position: center;
+  font-family: Georgia, serif;
+
+}
+
+#banner {
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	color: #FF63A4;
+	width: 685px;
+	margin-left: 295px;
+	margin-top: 70px;
+	font-size: 3.4em;
+	position: fixed;
+	text-shadow: 2px 2px 2px #000000;
+	
+	/*float: left;*/
+}
+
+#banner_schedule {
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	color: #FF63A4;
+	width: 675px;
+	margin-left: 997px;
+	margin-top: 40px;
+	font-size: 1.2em;
+	position: fixed;
+	text-shadow: 2px 2px 2px #000000;
+	
+	/*float: left;*/
+}
+
+#gift {
+	font-family: 'Allan', Helvetica, Arial, sans-serif;
+	color: #FF63A4;
+	width: 200px;
+	margin-left: 80px;
+	margin-top: 490px;
+	font-size: 1.9em;
+	position: fixed;
+	text-shadow: 1.5px 1.5px 1.5px #000000;
+	
+	/*float: left;*/
+}
+
+#logo {
+	font-family: 'Corben', Georgia, Times, serif;
+	color: #FF7F3F;
+	width: 60px;
+	margin-left: 85px;
+	margin-top: 35px;
+	font-size: 2.5em;
+	position: fixed;
+	text-shadow: 3px 3px 3px #000000;
+	
+	/*float: left;*/
+}
+
+#logo_address {
+	border-radius: 5px 5px 5px 5px;
+	font-family: 'Arvo', Georgia, Times, serif;
+	position: fixed;
+	margin-left: 92px;
+	margin-top: 175px;
+	font-size: .8em;
+	background: transparent url(http://html-generator.weebly.com/files/theme/input-text-8.png) repeat-x; 
+    border: 2px solid #000000; 
+    outline:0; 
+    height: 62px; 
+    width: 165px; 
+    background-color: #FFFFFF;
+    padding: 4px;
+}
+
+
+#home_link {
+	color: #FF63A4;
+	border-radius: 5px 5px 0px 0px;
+	/*width: 60px;*/
+	/*float: left;*/
+}
+
+#fb_link {
+	border-radius: 0px 0px 5px 5px;
+	/*position: fixed;*/
+}
+
+
+/*a {
+	display: block;
+	float: left;
+}*/
+
+#home_link:hover { 
+    color: #F9CB40;
+}
+
+#about_link:hover { 
+    color: #F9CB40;
+}
+
+#log_link:hover { 
+    color: #F9CB40;
+}
+
+#menu_link:hover { 
+    color: #F9CB40;
+}
+
+#contact_link:hover { 
+    color: #F9CB40;
+}
+
+#order_link:hover { 
+    color: #F9CB40;
+}
+
+#create_link:hover { 
+    color: #F9CB40;
+}
+
+#fb_link:hover { 
+    color: #F9CB40;
+    background-color: #FFFFFF;
+    border:2px solid #000000;
+}
+
+#app_link:hover { 
+    color: #F9CB40;
+}
+
+#fp_link:hover { 
+    color: #F9CB40;
+}
+
+#br_link:hover { 
+    color: #F9CB40;
+}
+
+#cd_link:hover { 
+    color: #F9CB40;
+}
+
+#sp_link:hover { 
+    color: #F9CB40;
+}
+
+#ls_link:hover { 
+    color: #F9CB40;
+}
+
+#veg_link:hover { 
+    color: #F9CB40;
+}
+
+#sides_link:hover { 
+    color: #F9CB40;
+}
+
+#alc_link:hover { 
+    color: #F9CB40;
+}
+
+#ff_link:hover { 
+    color: #F9CB40;
+
+}
+
+a:link, a:visited {
+	font-family: 'Arvo', Georgia, Times, serif;
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4ADD39;
+    width: 100px;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    /*text-shadow: 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black;*/
+   
+    /*float: left;*/
+}
+
+#app_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*position: fixed;*/
+    width: 67px;
+
+}
+#fp_link {
+	background-color:rgba(0,0,0,0.5);
+	/*margin-left: -69px;*/
+	/*position: fixed;*/
+	width: 67px;
+}
+
+#br_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*margin-left: -138px;*/
+    /*position: fixed;*/
+    width: 67px;
+}
+
+#cd_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*margin-left: -207px;*/
+    /*position: fixed;*/
+    width: 67px;
+}
+
+#sp_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*margin-left: -276px;*/
+    /*position: fixed;*/
+    width: 67px;
+}
+
+#ls_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*margin-left: 345px;*/
+    /*position: fixed;*/
+    width: 67px;
+}
+
+#veg_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*margin-left: 414px;*/
+	width: 67px;
+    /*position: fixed;*/
+}
+
+#sides_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*margin-left: 483px;*/
+    /*position: fixed;*/
+    width: 67px;
+}
+
+#alc_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*margin-left: 552px;*/
+    /*position: fixed;*/
+    width: 67px;
+}
+
+#ff_link { 
+    background-color:rgba(0,0,0,0.5);
+    /*margin-left: 621px;*/
+    /*position: fixed;*/
+    width: 67px;
+
+}
+
+
+
+.courseContainer{
+	display:block;
+    float:left;
+    padding:0;
+    margin: 0;
+}
+
+#about {
+	/*opacity: 0.4;*/
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 280px;
+	margin-top: 165px;
+	position: fixed;
+	background-color: #000000;
+	width: 850px;
+	height: 405px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+}
+
+
+#home {
+	/*opacity: 0.4;*/
+
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 280px;
+	margin-top: 165px;
+	position: fixed;
+	background-color: #000000;
+	width: 850px;
+	height: 405px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+
+}
+
+#menu {
+	/*opacity: 0.4;*/
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 280px;
+	margin-top: 165px;
+	position: fixed;
+	background-color: #000000;
+	width: 850px;
+	height: 405px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+
+}
+
+#account {
+	/*opacity: 0.4;*/
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 280px;
+	margin-top: 165px;
+	position: fixed;
+	background-color: #000000;
+	width: 850px;
+	height: 405px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+
+}
+
+#admin_account {
+	/*opacity: 0.4;*/
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 280px;
+	margin-top: 165px;
+	position: fixed;
+	background-color: #000000;
+	width: 850px;
+	height: 405px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+
+}
+
+#log_in {
+	/*opacity: 0.4;*/
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 280px;
+	margin-top: 165px;
+	position: fixed;
+	background-color: #000000;
+	width: 850px;
+	height: 405px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+
+}
+
+#contact {
+	/*opacity: 0.4;*/
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 280px;
+	margin-top: 165px;
+	position: fixed;
+	background-color: #000000;
+	width: 850px;
+	height: 405px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+
+}
+
+
+#order {
+	/*opacity: 0.4;*/
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 280px;
+	margin-top: 165px;
+	position: fixed;
+	background-color: #000000;
+	width: 850px;
+	height: 405px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.5);
+    position: fixed;
+
+}
+
+
+
+
+
+/*textarea {
+    border: 0 none white;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    background-color: #D0D0D0;
+    resize: none;
+}*/
+/*div {
+
+	width: 300;
+	padding: 25px;
+	border: 25px solid navy;
+	margin: 25px;
+}*/
+
+/*.dwelling {
+  background: url(../images/house.png) no-repeat;
+  background-size: cover;
+  height: 121px;
+  position: absolute;
+  top: 446px;
+  left: 900px;
+  width: 211px;
+}
+
+#waldo {
+  background: url(../images/waldo.gif) no-repeat;
+  background-size: 100% 100%;
+  top: 521px;
+  height: 45px;
+  position: absolute;
+  left: 889px;
+  width: 31px;
+  z-index: -10;
+}*/
+
+#beer1 {
+	width: 220px;
+	height: 385px;
+	margin-left: 380px;
+	margin-top: 10px;
+	position: fixed;
+}
+
+#beer2 {
+	width: 220px;
+	height: 385px;
+	margin-left: 610px;
+	margin-top: 10px;
+	position: fixed;
+}
+
+#shrimp {
+	width: 600px;
+	height: 270px;
+	margin-left: 30px;
+	margin-top: 200px;
+	position: fixed;
+}
+
+#talk {
+	width: 250px;
+	margin-left: 30px;
+	position: fixed;
+	font-size: 1.2em;
+}
+
+#hours { 
+	width: 250px;
+	margin-left: 30px;
+	margin-top: 270px;
+	position: fixed;
+	font-size: 1.2em;
+}
+
+#address { 
+	width: 250px;
+	margin-left: 30px;
+	margin-top: 30px;
+	position: fixed;
+	font-size: 1.2em;
+}
+
+#phone { 
+	width: 250px;
+	margin-left: 30px;
+	margin-top: 150px;
+	position: fixed;
+	font-size: 1.2em;
+}
+
+h1 {
+  color: #E44497;
+  font-size: 5em;
+  margin-top: 50px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: block;
+  text-align:center;
+   position: fixed;
+    top: 255px;
+    left: 82px;
+}
+
+
+
+li {
+  display: inline;
+  margin-right: 0px;
+  font-size: 0.7em;
+}
+
+li:nth-child(odd){
+  height: 55px;
+  width: 55px;
+}
+
+.shadowed {
+  text-shadow: 2px 2px gray;
+}
+
+.bird {
+  background: url(../images/bird.png) no-repeat;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
+
+button {
+  color: #E44497;
+  font-size: 1em;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#account_submit {
+  color: #000000;
+  font-size: 1em;
+  margin-top: 10px;
+  text-align: center;
+  margin-left:5px;
+}
+
+#admin_create {
+  color: #000000;
+  font-size: 1em;
+  margin-top: 10px;
+  text-align: center;
+  margin-left:5px;
+}
+
+#admin_sign_in {
+  color: #000000;
+  font-size: 1em;
+  margin-top: 10px;
+  text-align: center;
+  margin-left:5px;
+}
+
+#admin_create {
+  color: #000000;
+  font-size: 1em;
+  margin-top: 10px;
+  text-align: center;
+  margin-left:5px;
+}
+
+.fb-like {
+	margin-right:-120px;
+	margin-top: 30px;
+	float: right;
+	position: fixed;
+	
+}
+
+
+
+.menu {
+	margin:0px;padding:0px;
+	width:100%;
+	
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.menu table{
+	
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+
+}.menu tr:last-child td:last-child {
+
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.menu table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.menu table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.menu tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.menu tr:hover td{
+	
+}
+.menu tr:nth-child(odd){ background-color:rgba(0,0,0,0.5); }
+.menu tr:nth-child(even){ background-color:rgba(0,0,0,0.5); }.menu td{
+	vertical-align:middle;
+	
+	background-color:rgba(0,0,0,0.5);
+	
+	text-align:left;
+	padding:6px;
+	font-size:12px;
+	font-family:'Arvo', Georgia, Times, serif;
+	font-weight:normal;
+	color:#000000;
+}.menu tr:last-child td{
+	
+}.menu tr td:last-child{
+	
+}.menu tr:last-child td:last-child{
+	
+}
+.menu tr:first-child td{
+	background-color:rgba(0,0,0,0.5);
+	
+	/*border:0px solid #ffffff;*/
+	text-align:left;
+	
+	font-size:13px;
+	font-family:'Arvo', Georgia, Times, serif;
+	/*font-weight:bold;*/
+	color:#ffffff;
+	margin:10px;
+}
+.menu tr:first-child:hover td{
+
+	
+
+	background-color:rgba(0,0,0,0.5);
+}
+.menu tr:first-child td:first-child{
+
+	
+}
+.menu tr:first-child td:last-child{
+	
+}
+
+.iform {font: 12px/26px 'Arvo', Georgia, Times, serif; width:400px; margin:30px auto; }
+.iform ul { margin:0; padding:0; list-style:none;}
+.iform ul ul { overflow:auto}
+.iform li { padding-bottom:5px;}
+.iform label { 
+ width:130px; display:block; float:left; line-height:26px; 
+}
+.iform label.ilabel { 
+ width:auto; display:inline; float:none; margin-bottom: 10px;line-height:26px; padding:5px; 
+}
+
+.iform .itext,.iform .itextarea,.iform .iselect,.iform .ibutton { 	
+	width:200px;
+	border:1px solid #999;
+	-webkit-border-radius: 3px;-khtml-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+	margin:0;
+	padding:5px;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left 25, from(#fff), color-stop(6%, #eee), to(#fff));
+	background: -moz-linear-gradient(top, #fff, #eee 2px, #fff 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	color: #000000;
+
+
+}
+
+.iform .itext:hover,.iform .itextarea:hover,.iform .iselect:hover,.iform .ibutton:hover,
+.iform .itext:focus,.iform .itextarea:focus,.iform .iselect:focus,.iform .ibutton:focus{
+
+border-color: #333;
+background:#fff;
+
+}
+
+.iform .itext {
+
+
+}
+
+
+.iform .itextarea{ 
+	height:100px; width: 250px; 
+}
+.iform .ibutton {
+
+	width:auto;
+	background: #efefef;
+	background: -webkit-gradient(linear, left top, left 25, from(#dadada), color-stop(6%, #efefef), to(#dadada));
+	background: -moz-linear-gradient(top, #dadada, #efefef 2px, #dadada 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	padding:5px
+}
+.iform .ibutton:hover,.iform .ibutton:focus { background:#dadada;}
+.iheader { font:'Arvo', Georgia, Times, serif; display:block; font-size:18px; border-bottom:1px solid #000; padding:5px; margin:0px 0 5px;}
+.iform li.iseparator { display:block; text-indent:-9999px; height:10px; line-height:10px; border-bottom:1px solid #999;margin:5px 0 15px }
+
+.iform .required { border-color:#F00; }
+
+#imessageOK,#imessageERROR{ border:1px solid #F60; padding:10px; font-size:16px; font-weight:bold; text-align: center; display:none; margin-bottom:20px;
+
+	background: #F90;
+	background: -webkit-gradient(linear, left top, left 25, from(#F90), color-stop(4%, #FC0), to(#F90));
+	background: -moz-linear-gradient(top, #F90, #FC0 1px, #F90 25px);
+	color:#fff;
+	}
+
+
+.admin_logout {
+	margin-left:850px;
+	background:#efefef;
+	-webkit-border-radius: 3px;-khtml-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+	color: #000000 ;
+	/*box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;*/
+	
+}
+
+.admin_logout:hover { background:#dadada;}
+
+
+#slidy-container {
+	height: 360px; 
+	width: 800px;
+	overflow: hidden;
+	margin-top: 23px;
+	margin-left: 25px;
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+
+
+
+ * require_tree .
+
+ */
+
+
